@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="Posters.js"></script>
+  </head>
+  <body>
+    <a-scene background="color:#02032e">
+      <!-- Ground -->
+      <a-plane
+        id="ground"
+        color="#669633"
+        width="200"
+        height="100"
+        rotation="-90 0 0"
+      ></a-plane>
+      <!-- Poster Container -->
+      <a-entity id="posters-container" comics-posters> </a-entity>
+
+      <a-camera id="camera" position="0 10 20">
+        
+
+        <a-entity
+          id="app-title"
+          position="0 0.73 -1"
+          text="font: exo2bold; align: center; width: 2; color: white; value: Virtual Comics Store !"
+        >
+          <a-entity
+            id="app-subtitle"
+            position="0 -0.1 0"
+            text="font: dejavu; align: center; width: 1; color: white; value: Get the best 'MARVEL' & 'X-MEN' Comics"
+          ></a-entity>
+        </a-entity>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
